@@ -1,9 +1,7 @@
-Blog_Api_Flask_Tutorial2
-
-
 ### New Jersey Institute of Technology
 ### IS601 - 851
-### Homework Assignment: Mini Project 4: Web Application - Part 3
+## Mini Project 4
+### Homework Assignment:  Web Application - Part 3
 Building a RESTful Blog APIs using Python and flask  PART 3
 #### Michelle Boykins
 
@@ -18,21 +16,33 @@ Upload it to Github and submit a link to the repo branch called "part3" and prov
 
 
 ### Output:
-#### Running our application  
-* "Running the app for the first time" run python run.py:  
+#### Running the application:
+
+"Install Tests Dependencies"    
+* Install the following packages:  run  $ pipenv install pytest-cov pytest   
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
-* Working Endpoint:  
-Run http://127.0.0.1:5000/ on  browser  
-![](https://github.com/shellynj/blog_api/edit/master/2first_endpoint.png)    
+filename:  
+5installation_pipenv_install_pytest_cov_pytest  
 
-* Database   
-Confirm whether tables were created in the db. RUN psql  
+"Get test Code coverage using pytest-cov"  
+* Code coverage shows the percentage of our code that are cover in the test.  
+To run the tests and also get its code coverage, use the following command: run $ pytest --cov=src  
+
+filename:  
+6pytest--cov_src
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
+"Deploy app on Heroku"  
+*View Live App  
+filename:  
+7deployheroku
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
-
-
+"Open app":   
+filename:  
+8deployheroku_open_app
+![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
 
 
