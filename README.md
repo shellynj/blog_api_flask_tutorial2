@@ -33,7 +33,7 @@ filename:
 6pytest--cov_src
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
-#### "Deploy app on Heroku"  
+#### "Deploy app on Heroku"  Link to Heroku: https://blog-api-tutorial.herokuapp.com/ 
 * View Live App  
 filename:  
 7deployheroku
