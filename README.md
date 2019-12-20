@@ -16,16 +16,16 @@ Upload it to Github and submit a link to the repo branch called "part3" and prov
 
 
 ### Output:
-#### Running the application:
+### Running the application:
 
-"Install Tests Dependencies"    
+#### "Install Tests Dependencies"    
 * Install the following packages:  run  $ pipenv install pytest-cov pytest   
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
 filename:  
 5installation_pipenv_install_pytest_cov_pytest  
 
-"Get test Code coverage using pytest-cov"  
+#### "Get test Code coverage using pytest-cov"  
 * Code coverage shows the percentage of our code that are cover in the test.  
 To run the tests and also get its code coverage, use the following command: run $ pytest --cov=src  
 
@@ -33,13 +33,13 @@ filename:
 6pytest--cov_src
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
-"Deploy app on Heroku"  
+#### "Deploy app on Heroku"  
 * View Live App  
 filename:  
 7deployheroku
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
-"Open app":   
+* Open app":   
 filename:  
 8deployheroku_open_app
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
