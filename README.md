@@ -34,7 +34,7 @@ filename:
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
 
 "Deploy app on Heroku"  
-*View Live App  
+* View Live App  
 filename:  
 7deployheroku
 ![](https://github.com/adam-p/markdown-here/raw/master/src/common/images/1python run_py run.png)
