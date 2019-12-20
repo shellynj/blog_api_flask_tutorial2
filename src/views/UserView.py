@@ -1,15 +1,12 @@
 #/src/views/UserView
 
 from flask import request, json, Response, Blueprint, g
-
 from ..models.UserModel import UserModel, UserSchema
 from ..shared.Authentication import Auth
 
 
 user_api = Blueprint('user_api', __name__)
 user_schema = UserSchema()
-
-
 
 @user_api.route('/', methods=['POST'])
 def create():
@@ -21,14 +18,7 @@ def create():
   data, *error = user_schema.load(req_data)
 
   if error:
-    #ADDED these two
-    #message = {'error:User already exist, please supply another email address': req_data}
-    message = {'error:User already exist, please supply another email address': data}
-
-
-    return custom_response(message, 400 )
-
-    #return custom_response(error, 400)
+    return custom_response(error, 400 )
 
   
   # check if user already exist in the db
@@ -38,13 +28,14 @@ def create():
     return custom_response(message, 400)
   
   user = UserModel(data)
+  user.save()
   ser_data = user_schema.dump(user).data
   token = Auth.generate_token(ser_data.get('id'))
   return custom_response({'jwt_token': token}, 201)
 
 
 @user_api.route('/', methods=['GET'])
-@Auth.auth_required
+#@Auth.auth_required
 def get_all():
   """
   Get all users
@@ -54,7 +45,7 @@ def get_all():
   return custom_response(ser_users, 200)
 
 @user_api.route('/<int:user_id>', methods=['GET'])
-@Auth.auth_required
+#@Auth.auth_required
 def get_a_user(user_id):
   """
   Get a single user
@@ -67,7 +58,7 @@ def get_a_user(user_id):
   return custom_response(ser_user, 200)
 
 @user_api.route('/me', methods=['PUT'])
-@Auth.auth_required
+#@Auth.auth_required
 def update():
   """
   Update me
@@ -83,7 +74,7 @@ def update():
   return custom_response(ser_user, 200)
 
 @user_api.route('/me', methods=['DELETE'])
-@Auth.auth_required
+#@Auth.auth_required
 def delete():
   """
   Delete a user
@@ -93,7 +84,7 @@ def delete():
   return custom_response({'message': 'deleted'}, 204)
 
 @user_api.route('/me', methods=['GET'])
-@Auth.auth_required
+#@Auth.auth_required
 def get_me():
   """
   Get me

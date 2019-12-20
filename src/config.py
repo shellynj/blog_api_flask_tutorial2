@@ -38,8 +38,7 @@ class Production(object):
 
     #JWT_SECRET_KEY = os.getenv('JWT_SECRET_KEY')
     # Hardcoded JWT_SECRET_KEY for Windows users
-    JWT_SECRET_KEY = os.getenv('hhgaghhgsdhdhdd')
-
+    JWT_SECRET_KEY = 'hhgaghhgsdhdhdd'
 
 class Testing(object):
     """
