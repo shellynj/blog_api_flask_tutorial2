@@ -20,31 +20,37 @@ Upload it to Github and submit a link to the repo branch called "part3" and prov
 
 #### "Install Tests Dependencies"    
 * Install the following packages:  run  $ pipenv install pytest-cov pytest   
-![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/5installation_pipenv_install_pytest_cov_pytest.png)
+
+![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/images/5installation_pipenv_install_pytest_cov_pytest.png)
+
 
 
 #### "Get test Code coverage using pytest-cov"  
 * Code coverage shows the percentage of our code that are cover in the test.  
 To run the tests and also get its code coverage, use the following command: run $ pytest --cov=src  
 
-![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/6pytest--cov_src.png)
+![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/images/6pytest--cov_src.png)
+
 
 
 #### "Deploy app on Heroku"  Link to Heroku: https://blog-api-tutorial.herokuapp.com/ 
 * View Live App  
 
-![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/7deployheroku.png)
+![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/images/7deployheroku.png)
 
 
 * Open app":    
 
-![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/8deployheroku_open_app.png)
+![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/images/8deployheroku_open_app.png)
+
+* Heroku Settings  
+
+![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/images/9heroku_settings.png)
 
 
+* Heroku Build
 
-
-
-
+![](https://github.com/shellynj/blog_api_flask_tutorial2/blob/master/src/images/10heroku_Build_log.png)
 
 
 
